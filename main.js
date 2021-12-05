@@ -8,7 +8,7 @@ var main = function(req, res)
    
    var q = url.parse(req.url, true).query;
    if(q.pathname === '/'){  
-      res.write(helpNeeded);
+      res.write(toString(helpNeeded));
       res.end();
    }
    if(q.pathname === '/help'){
