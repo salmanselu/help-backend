@@ -6,7 +6,7 @@ helpNeeded = "false";
 var main = function(req, res)
 {   
    
-   var q = url.parse(req.url, true).query;
+   var q = url.parse(req.url, true);
 
    if(q.pathname === '/help'){
       helpNeeded = "true";
