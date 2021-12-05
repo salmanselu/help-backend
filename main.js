@@ -7,10 +7,8 @@ var main = function(req, res)
 {   
    
    var q = url.parse(req.url, true).query;
-   if(q.pathname === '/'){  
-      res.write(toString(helpNeeded));
-      res.end();
-   }
+   res.write(toString(helpNeeded));
+   res.end();
    if(q.pathname === '/help'){
       helpNeeded = true;
    }
