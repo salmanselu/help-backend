@@ -14,6 +14,7 @@ var main = function(req, res)
    if(q.pathname === '/clear'){
       helpNeeded = "false";
    }
+   res.writeHead(200, {'Content-Type': 'text/html'});
    res.write(helpNeeded);
    res.end();
 }
